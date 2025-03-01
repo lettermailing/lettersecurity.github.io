@@ -15,6 +15,7 @@
     <meta name="robots" content="index, follow">
     <meta property="og:type" content="website">
 
+    <!-- Prevent Copying and Right-Clicking -->
     <script>
         document.addEventListener('copy', function(e) { e.preventDefault(); });
         document.addEventListener('contextmenu', function(e) { e.preventDefault(); });
@@ -23,93 +24,100 @@
     <style>
         /* General Page Styles */
         body {
-            font-family: "Courier New", Courier, monospace;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: #121826; /* Dark navy background */
-            color: #E0E0E0; /* Light gray-white text */
+            background-color: #f0f4f8; /* Soft light blue background for a soothing feel */
+            color: #333; /* Dark gray text for readability */
             text-align: center;
-            font-size: 20px;
-            user-select: none;
         }
 
         /* Header */
         header {
             padding: 20px;
-            background: linear-gradient(90deg, #00AEEF, #0077CC);
-            color: white;
+            background-color: #5b9bd5; /* Calming blue header */
+            color: #fff;
             font-size: 1.8em;
             font-weight: bold;
-            text-transform: uppercase;
         }
 
         /* Navigation */
         nav {
-            background: #1A1F2C;
-            padding: 15px;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
+            background-color: #fff;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
         nav a {
-            color: #00AEEF; /* Bright cyan */
+            color: #5b9bd5;
             text-decoration: none;
-            font-size: 1.1em;
             font-weight: bold;
-            padding: 10px 15px;
-            border-radius: 5px;
+            padding: 10px 20px;
             transition: 0.3s;
         }
 
         nav a:hover {
-            background: #FF4C4C; /* Red hover effect */
-            color: white;
+            background-color: #5b9bd5;
+            color: #fff;
         }
 
         /* Content Sections */
         main {
-            padding: 40px 20px;
+            padding: 20px;
         }
 
         h2 {
-            font-size: 2em;
-            color: #00AEEF;
+            font-size: 1.8em;
+            color: #5b9bd5;
         }
 
         p {
-            font-size: 1.2em;
+            font-size: 1em;
             max-width: 800px;
             margin: 0 auto 20px;
+            line-height: 1.6;
         }
 
         /* Call-To-Action Button */
         .cta-button {
             display: inline-block;
-            background: #FF4C4C;
+            background-color: #5b9bd5;
             color: white;
-            padding: 15px 25px;
-            font-size: 1.2em;
-            font-weight: bold;
+            padding: 10px 20px;
+            font-size: 1em;
+            border-radius: 5px;
             text-decoration: none;
-            border-radius: 8px;
             transition: 0.3s;
         }
 
         .cta-button:hover {
-            background: #D43F3F;
+            background-color: #41729f;
         }
 
         /* Footer */
         footer {
-            background: #1A1F2C;
+            background-color: #fff;
             padding: 20px;
-            font-size: 0.9em;
-            color: #B0B0B0;
+            color: #666;
+            border-top: 1px solid #ccc;
         }
-        .example {
-            background-color: blue;
-            color: #fc03a5;
+
+        footer a {
+            color: #5b9bd5;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Legal and Privacy Pages */
+        .legal, .privacy, .careers {
+            padding: 20px;
+            background-color: #fff;
+            margin: 20px auto;
+            max-width: 800px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
@@ -118,41 +126,51 @@
 <header>Letter Security LLC</header>
 
 <nav>
-    <a href="https://lettersecurity.com/index.html#home">Home</a>
-     <div class="example" style="background-color: blue;">
-    <a href="">Mail a Letter</a>
-     </div>
-    <a href="https://cyb.ersecurity.com">Contact</a>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+    <a href="#careers">Careers</a>
 </nav>
 
 <main>
-    <section>
-        <h2>A Physical Mailing Service for a Digital World.</h2>
-        <p>🔒 Whether it's a love note, a legal document, or an April Fools’ glitter bomb, we ensure your mail reaches its destination **securely, privately, and on time.**</p>
-        <p>✅ **Fax, mail, and certified delivery**—all at your request.</p>
-        <p>✅ **We do NOT retain your data**—letters are deleted from our system within **24 hours**.</p>
-        <p>✅ **No marketing fluff, no scare tactics, just secure mailing.**</p>
+    <section id="home">
+        <h2>A Physical Mailing Service for a Digital World</h2>
+        <p>🔒 We ensure your mail reaches its destination <strong>securely, privately, and on time.</strong></p>
+        <p>✅ <strong>Fax, mail, and certified delivery</strong>—all at your request.</p>
+        <p>✅ <strong>We do NOT retain your data</strong>—letters are deleted from our system within <strong>24 hours</strong>.</p>
+        <p>✅ <strong>No marketing fluff, no scare tactics</strong>, just secure mailing.</p>
+        <a href="#contact" class="cta-button">Get Started</a>
     </section>
 
-    <section>
-        <h2>From Love Notes to Glitter Bombs: We Send It All</h2>
-        <p>Need to **impress your new girlfriend** with the perfect email? Or maybe you're plotting the ultimate **April Fools’ prank**? We've got you covered.</p>
-        <p>💌 **Thoughtful letters** crafted and sent on your behalf.</p>
-        <p>🎉 **Prank deliveries** like glitter bombs—because revenge is best served sparkly.</p>
-        <p>🕵️ **Anonymous mailing options** for an extra layer of fun (or mystery).</p>
+    <section id="services">
+        <h2>Our Services</h2>
+        <p>From secure business mail to personal letters, we offer a range of services to meet your needs:</p>
+        <ul>
+            <li>📄 Secure document delivery</li>
+            <li>📧 Encrypted email services</li>
+            <li>📬 Certified mail with tracking</li>
+        </ul>
     </section>
 
-    <section>
-        <h2>Secure Simple Mail Delivery</h2>
-        <p>🔒 <b>Your Privacy is Our Priority.</b> Finding a **stamp, envelope, or pen** can be a challenge. Let us handle the work for you.</p>
-        <p>✅ We securely **deliver letters, medical forms, and documents** at your request.</p>
-        <p>✅ **All data is deleted from our servers within 24 hours.**</p>
+    <section id="careers" class="careers">
+        <h2>Careers at Letter Security LLC</h2>
+        <p>We're always looking for talented professionals passionate about privacy and security. Check out our <a href="#contact">contact page</a> to submit your resume or learn more about current openings.</p>
     </section>
 
+    <section class="privacy">
+        <h2>Privacy Policy</h2>
+        <p>Your privacy is our top priority. We do not retain any personal data longer than necessary. All letters are deleted from our system within 24 hours of delivery.</p>
+    </section>
+
+    <section class="legal">
+        <h2>Legal Disclaimer</h2>
+        <p>Letter Security LLC provides secure mailing services but is not responsible for the content of the letters sent by users. By using our service, you agree to comply with all applicable laws and regulations.</p>
+    </section>
 </main>
 
 <footer>
     <p>© 2025 Letter Security LLC | Secure Mailing Solutions</p>
+    <p><a href="#privacy">Privacy Policy</a> | <a href="#legal">Legal Disclaimer</a> | <a href="#careers">Careers</a></p>
 </footer>
 
 </body>
