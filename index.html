@@ -1,275 +1,154 @@
-x<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Page Thumbnail for Social Media -->
+    <title>Letter Security LLC</title>
+
+    <!-- SEO Meta Tags -->
     <meta property="og:image" content="images/emergency.png">
     <meta property="og:title" content="Letter Security LLC">
     <meta property="og:description" content="A Physical Mailing Service for a Digital World.">
     <meta property="og:url" content="https://cyb.ersecurity.com">
     <meta name="description" content="Letter Security LLC - A Physical Mailing Service for a Digital World.">
-    <meta name="keywords" content="cyber security, security, tech, technology, 1099, aggregation, attack, attacksurface, attackvectors, bash, blog, blogging, blueteam, brands, breach, bug bounty, bug sweeps, bugs, c programming, cats, cellphone, cellular, ceos, ceotalks, letter mailing service, secure mailing, mail delivery service, USPS mailing, bulk mail service, direct mail service, business mail service, physical mail delivery, professional mailing service, confidential letter delivery, document mailing service, secure document delivery, legal document mailing, certified mail service, secure letter mailing, encrypted mail service, confidential mail service, privacy-focused mailing, tamper-proof mail, compliance mailing service, legal mail service, cyber-secure mail delivery, private document mailing, identity protection mailing, encrypted document mailing, business mail solutions, corporate mailing service, executive mail service, official letter delivery, invoice mailing service, client communication mailing, professional correspondence delivery, financial document mailing, legal notice mailing, HR document mailing, compliance notification service, bulk mailing service, mass mail service, automated mailing, high-volume mail delivery, subscription mailing service, recurring mail service, bulk letter printing and mailing, API mailing service, mailing automation software, direct mail automation, enterprise mailing solutions, HIPAA mail service, GDPR compliant mailing, financial compliance mail, legal notice mailing, tax document mailing, government mail service, official document mailing, compliance letter mailing, certified compliance mail, secure regulatory mailing, direct mail marketing, personalized letter mailing, customer engagement mail, promotional mail service, targeted direct mail, brand marketing letters, postcard mailing service, print and mail service, mail advertising, direct response mailing, Seattle letter mailing, Portland mail service, Kansas City mailing service, Oregon mailing solutions, nationwide mail delivery, local mailing service, regional mail processing, US-based letter mailing, domestic mail delivery, global mail solutions">
     <meta name="author" content="Letter Security LLC">
     <meta name="robots" content="index, follow">
     <meta property="og:type" content="website">
-    <title>Letter Security LLC</title>
-<script>
-  document.addEventListener('copy', function(e) {
-    e.preventDefault();
-  });
-</script>
 
-
-<script>
-  document.addEventListener('contextmenu', function(e) {
-    e.preventDefault();
-  });
-</script>
-
+    <script>
+        document.addEventListener('copy', function(e) { e.preventDefault(); });
+        document.addEventListener('contextmenu', function(e) { e.preventDefault(); });
+    </script>
 
     <style>
+        /* General Page Styles */
         body {
-            font-family: 'Courier New', Courier, monospace;
+            font-family: "Courier New", Courier, monospace;
             margin: 0;
             padding: 0;
-            background: #000000;
+            background: #121826; /* Dark navy background */
+            color: #E0E0E0; /* Light gray-white text */
+            text-align: center;
+            font-size: 20px;
+            user-select: none;
+        }
+
+        /* Header */
+        header {
+            padding: 20px;
+            background: linear-gradient(90deg, #00AEEF, #0077CC);
             color: white;
-            text-align: center;
-            font-size: 20px;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-
+            font-size: 1.8em;
+            font-weight: bold;
+            text-transform: uppercase;
         }
-        header, main, footer {
-            padding: 10px;
-            text-align: center;
-            font-size: 20px;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
 
-        }
+        /* Navigation */
         nav {
-            font-family: Courier New', Courier, monospace;
-            color: #9999ff;
-            background: #000000;
+            background: #1A1F2C;
+            padding: 15px;
             display: flex;
             justify-content: center;
-            font-size: 20px;
-            flex-wrap: wrap;
-        }
-        nav a {
-            font-family: Courier New', Courier, monospace;
-            color: white;
-            padding: 14px 20px;
-            text-decoration: none;
-            display: block;
-            font-size: 20px;
-            animation: fadeIn 2s ease-in-out;
-        }
-        nav a:hover {
-            font-family: Courier New', Courier, monospace;
-            background: #df1313;
-            color: white;
-            padding: 14px 20px;
-            text-decoration: none;
-            display: block;
-            font-size: 20px;
-            animation: pulse 1s infinite;
-        }
-
-         @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.1); }
-            100% { transform: scale(1); }
-        }
-        .content {
-            animation: slideIn 1s ease-in-out;
-        }
-        @keyframes slideIn {
-            from { transform: translateY(100px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
-        }
-        #services {
-            margin: 20px auto;
-        }
-        .services {
-            text-align: center;
-            color: white;
-            font-size: 20px;  
-        }
-
-        .scroll {
-            text-align: center; /* Ensures text within the div remains left-aligned */
-            padding: 1px; /* Optional: adds some spacing inside the div */
-            font-size: 20px;
-            font-family: "Courier New", Times, serif;
-            flex-wrap: wrap;
-        }
-        .links a {
-            color: #fc03a5;
-            text-decoration: none;
-            font-size: 20px;
-        }
-        .links a:hover {
-            font-family: "Courier New",  Times, serif;
-            background: #ffe6ff;
-            color: #b00274;
-            text-decoration: underline;
-            font-size: 20px;
-        }
-        .home {
-            font-family: "Courier New", Times, serif;
-            text-align: center;
-            color: white;
-            font-size: 20px;
-        }
-        .exploit {
-            font-family: "Courier New", Times, serif;
-            text-align: center;
-            color: white;
-            font-size: 20px;
-        }
-        .container {
-            display: flex;
-            flex-wrap: wrap;
             gap: 20px;
         }
-        .column {
-            flex: 1;
-            min-width: 200px;
+
+        nav a {
+            color: #00AEEF; /* Bright cyan */
+            text-decoration: none;
+            font-size: 1.1em;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: 0.3s;
         }
-        .checkbox {
-            display: grid;
-            flex-direction: column;
-            grid-template-columns: 1fr 1fr 1fr ;
-            align-items: center;
-            gap: 10px;
-            max-width: 300px;
-            margin: auto;
+
+        nav a:hover {
+            background: #FF4C4C; /* Red hover effect */
+            color: white;
         }
-        .checkbox div {
-           margin: 5px 0;
+
+        /* Content Sections */
+        main {
+            padding: 40px 20px;
         }
-        table {
-            width: 100%;
-            border-collapse: collapse;
+
+        h2 {
+            font-size: 2em;
+            color: #00AEEF;
         }
-        table, th, td {
-            border: 1px solid black;
+
+        p {
+            font-size: 1.2em;
+            max-width: 800px;
+            margin: 0 auto 20px;
         }
-        th, td {
-            padding: 8px;
-            text-align: center;
+
+        /* Call-To-Action Button */
+        .cta-button {
+            display: inline-block;
+            background: #FF4C4C;
+            color: white;
+            padding: 15px 25px;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: 0.3s;
         }
-        .example {
-            background-color: blue;
-            color: #fc03a5;
+
+        .cta-button:hover {
+            background: #D43F3F;
         }
-        @media (max-width: 600px) {
-            .checkbox {
-                grid-template-columns: 1fr; /* Single column for very small devices */
-            }
-            nav a {
-                font-size: 14px;
-            }
-            body {
-                font-size: 14px;
-            }
+
+        /* Footer */
+        footer {
+            background: #1A1F2C;
+            padding: 20px;
+            font-size: 0.9em;
+            color: #B0B0B0;
         }
     </style>
 </head>
 <body>
-</font>
-<main>
-<section id="home">
-<div class="home">
-<p>
-<span style="font-family: "Courier New", Times, serif;">
-<font color="red"><font size="8">L</font></font><font size="8">etter </font><font color="red"><font size="10">S</font></font><font size="8">ecurity </font>
-</span>
-</p>
+
+<header>Letter Security LLC</header>
+
 <nav>
     <a href="https://cyb.ersecurity.com/index.html#home">Home</a>
     <a href="https://cyb.ersecurity.com/index.html#intro">About</a>
     <a href="https://cyb.ersecurity.com/index.html#about">Mail a Letter</a>
     <a href="https://linkedin.com/in/internetarchaeology">Contact</a>
 </nav>
-</div>
-</section>
-
-<div style="position: relative;">
-  <img src="images/emergency.png" alt="Letter Security LLC">
-  <img src="images/transparent.png" style="position: absolute; top: 0; left: 0;" width="100%" height="100%">
-</div>
-<h1><font color="yellow"><font size="5"><p>A Physical Mailing Service for a Digital World.</h1> </font></font>
 
 <main>
-<font color="white"><b><font size="6"><p>From Love Notes to Glitter Bombs: We Send It All</p></font></font>
-</font></b>
-<p>Sometimes, life’s little tasks catch you off guard—whether it’s crafting the perfect email to your new girlfriend (without sounding like a weirdo) or pulling off the ultimate April Fools' prank with a well-timed glitter bomb. Luckily, we’ve got you covered.</p>
+    <section>
+        <h2>A Physical Mailing Service for a Digital World.</h2>
+        <p>🔒 Whether it's a love note, a legal document, or an April Fools’ glitter bomb, we ensure your mail reaches its destination **securely, privately, and on time.**</p>
+        <p>✅ **Fax, mail, and certified delivery**—all at your request.</p>
+        <p>✅ **We do NOT retain your data**—letters are deleted from our system within **24 hours**.</p>
+        <p>✅ **No marketing fluff, no scare tactics, just secure mailing.**</p>
+    </section>
 
-<p>From thoughtful love letters to chaotic-yet-hilarious surprises, we handle it all with precision, privacy, and discretion (or delightful lack thereof, if that’s what you’re going for).
+    <section>
+        <h2>From Love Notes to Glitter Bombs: We Send It All</h2>
+        <p>Need to **impress your new girlfriend** with the perfect email? Or maybe you're plotting the ultimate **April Fools’ prank**? We've got you covered.</p>
+        <p>💌 **Thoughtful letters** crafted and sent on your behalf.</p>
+        <p>🎉 **Prank deliveries** like glitter bombs—because revenge is best served sparkly.</p>
+        <p>🕵️ **Anonymous mailing options** for an extra layer of fun (or mystery).</p>
+    </section>
 
-We offer email drafting, letter mailing, anonymous prank deliveries, and even certified mail for when you need to make it official.
-</p>
-<p>🔒 Your Privacy is Still Our Priority
+    <section>
+        <h2>Secure Mail Delivery</h2>
+        <p>🔒 <b>Your Privacy is Our Priority.</b> Finding a **stamp, envelope, or pen** can be a challenge. Let us handle the work for you.</p>
+        <p>✅ We securely **deliver letters, medical forms, and documents** at your request.</p>
+        <p>✅ **All data is deleted from our servers within 24 hours.**</p>
+    </section>
 
-Whether it’s sweet, serious, or spectacularly petty, we send it exactly how you want.
-We don’t retain your data—once your message is sent, it’s gone within 24 hours.
-Need help crafting the perfect email? We can make you sound charming, professional, or mysteriously intriguing.
-📨 Let us handle the details—whether you’re making hearts flutter or floors sparkle with regret.</p>
-<br>
-</p></font></font>
-</font>
-<h1> <font color="green"><font size="5"><font color="red"><b><a href="https://emergency.formstack.com/forms/booknow">Book Today</a></b></font></font></font></h1>
-<p>  _,.-'~'-.,__,.-'~'-.,__,.-'~'-.,__,.-'~'-.,__,.-'~'-.,_</p><br><br><br><span 
-<section id="intro">
-<div class="intro">
-<br><font color="red">
-</font>
-<p></p>
-<font color="white"><b><font size="10"><p>Secure Mail Delivery</p></font></font></b></font></font>
-</b></span></font>
-</div>
-<p>🔒 Your Privacy is Our Priority.  You may have everything you need in life, but when it comes time to mail a letter, finding a stamp, envelope, or even a pen can be a challenge. Let us handle the work for you. Whether it’s a simple letter to Aunt Mildred or important medical forms for your doctor, we’ve got you covered.  We offer faxing, standard mail, and certified mail—all at your request.
-
-Our secure letter mailing service is designed specifically for businesses and professionals who demand privacy, compliance, and cybersecurity expertise in their mail communications.
-
-With elite skills in cybersecurity, private investigation, and investigative journalism, we take a precision-focused approach—no marketing fluff, no scare tactics, and no frustrating hold times. Instead, you’ll have direct access to an experienced professional who prioritizes security, efficiency, and discretion in every mailing.
-
-We securely deliver your letters as requested.
-We do not retain your data. Once your letter is submitted and printed, it is deleted from our servers within 24 hours.
-Your data security is our top priority—every step of the way.
-📨 Let us take the hassle out of mailing while keeping your information secure.</p></font>
-</div>
-</section>
-<h1> <font color="green"><font size="5"><font color="red"><b><a href="https://emergency.formstack.com/forms/booknow">Book Today</a></b></font></font></font></h1>
-<p>  _,.-'~'-.,__,.-'~'-.,__,.-'~'-.,__,.-'~'-.,__,.-'~'-.,_</p><br><br><br>        
-
-<span style="font-family: "Courier New", Times, serif;">
-<font color="red"><font size="10">N</font><font size="8">avigate the </font><font size="10">F</font><font size="8">orgotten </font><font size="10">A</font><font size="8">rt of </font><font size="10">A</font><font size="8">ccuracy </font></font>
-<p></p>
-</font>
-</span>
-</b>
-</div>
-</section>
-</font>
-<br>
-
-
-<p>  _,.-'~'-.,__,.-'~'-.,__,.-'~'-.,__,.-'~'-.,__,.-'~'-.,_</p><br><br><br>
 </main>
-=^..^=    =^..^=  © 2025 Electric Consulting LLC   =^..^=    =^..^=
+
+<footer>
+    <p>© 2025 Electric Consulting LLC | Secure Mailing Solutions</p>
 </footer>
+
 </body>
 </html>
